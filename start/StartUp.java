@@ -1,3 +1,4 @@
+//The starting file of the application
 package start;
 
 import javax.swing.JFrame;
