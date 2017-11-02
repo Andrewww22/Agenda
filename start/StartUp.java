@@ -2,6 +2,9 @@
 package start;
 
 import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 public class StartUp extends  JFrame{
 
@@ -13,6 +16,23 @@ public class StartUp extends  JFrame{
 	{
 		this.setBounds(startX, startY, startX+dim, startY+dim);
 		this.setTitle("Agenda");
+		JMenuBar menuBar;
+		JMenu menu ;
+		JMenuItem menuItem;
+		
+		//Create the menu bar;
+		menuBar = new  JMenuBar();
+		
+		//Build the first menu;
+		menu = new JMenu("Contact");
+		
+		//addding the menu to the menu bar
+		menuBar.add(menu);
+		
+		setJMenuBar(menuBar);
+		
+		
+		
 		this.setVisible(true);
 		
 	}
