@@ -6,7 +6,7 @@ import java.awt.Container;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class Contact extends ViewTools{
+public class Contact extends GeneralView{
 
 
 

@@ -5,7 +5,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
-public class StartUp extends  ViewTools
+public class StartUp extends  GeneralView
 {
 
 	public StartUp(int dimX, int dimY)
