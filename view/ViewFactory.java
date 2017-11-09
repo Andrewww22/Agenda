@@ -17,21 +17,26 @@ public class ViewFactory
   {
     GeneralView gv = new GeneralView(100,100);
     if (who.equals("Contact") )
-		   {
-			   gv.setTitle( who +"-Operation");
+		{
+			      gv.setTitle( who +"-Operation");
+            Contact  contact = new Contact();
 
-				Container container = gv.getContentPane();
+				    Container container = gv.getContentPane();
+            int  dim =  contact.attributeKey.length;
+				    for(int i = 0 ; i < dim ; i++)
+				    {
+				          JLabel aTextlabel = new JLabel();
+				          aTextlabel.setText("First Name: ");
+				          container.add(aTextlabel);
+                  if(contact.attributeType[i].equals("text"))
+						      {
+                      JTextField  aTextField = new JTextField(10);
+                      container.add(aTextField, BorderLayout.SOUTH);
+                  }
+		        }
 
-				JLabel labelText = new JLabel();
-				labelText.setText("First Name: ");
-				container.add(labelText);
-
-				JTextField field = new JTextField(10);
-				container.add(field,BorderLayout.SOUTH);
-		   }
-
-    return gv;
-  }
+            return gv;
+    }
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
